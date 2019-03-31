@@ -18,3 +18,13 @@ function mudabtlogin() {
 }
 
 mudabtlogin();
+
+document.getElementById("buscar").addEventListener("click", function () {
+
+    var classes = document.getElementsByClassName("card-title");
+    var filmes = [];
+    for (let i = 0; i < classes.length; i++) {
+        filmes[i] = classes[i].innerText;
+    }
+
+});
