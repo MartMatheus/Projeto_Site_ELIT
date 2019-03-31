@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Elit Filmes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="js/components/app.js"></script>
+    <script src="js/components/footerController.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/elit.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand logo" href="index.html"><img src="IMAGENS/Elit-logo.png" alt="Logo Elit"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Como_funciona.html">Como funciona</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Filmes.html">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Eventos.html">Eventos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button type="button" class="btn btn-blue btn-rounded" id="btlogin"
+                    onclick="location.href='login.html'">Login</button>
+
+            </div>
+        </nav>
+    </header>
+
+    <main id="Eventos">
+
+
+    </main>
+
+    <div ng-app="rodapeElit">
+        <footer-elit></footer-elit>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/elit.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+</body>
+
+</html>

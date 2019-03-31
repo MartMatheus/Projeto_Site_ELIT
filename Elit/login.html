@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Elit Filmes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="js/components/app.js"></script>
+    <script src="js/components/footerController.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/elit.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand logo" href="index.html"><img src="IMAGENS/Elit-logo.png" alt="Logo Elit"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Como_funciona.html">Como funciona</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Filmes.html">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Eventos.html">Eventos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button type="button" class="btn btn-blue btn-rounded" id="btlogin"
+                    onclick="location.href='login.html'">Login</button>
+
+            </div>
+        </nav>
+    </header>
+
+    <main id="tela_login">
+
+        <div id="login">
+
+            <div id="sign-in" class="text-center border border-light p-5">
+
+                <p class="h4 mb-4">Sign in</p>
+
+                <!-- Email -->
+                <input type="email" id="lemail" class="form-control mb-4" placeholder="E-mail">
+
+                <!-- Password -->
+                <input type="password" id="lpwd" class="form-control mb-4" placeholder="Password">
+
+                <div class="d-block justify-content-around">
+                    <div>
+                        <!-- Remember me -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                            <label class="custom-control-label" for="defaultLoginFormRemember">Remember me </label>
+                        </div>
+                    </div>
+                    <br />
+                    <div>
+                        <!-- Forgot password -->
+                        <a href="!#"> Forgot password?</a>
+                    </div>
+                </div>
+
+                <!-- Sign in button -->
+                <button class="btn btn-info btn-block my-4" id="logar">Sign in</button>
+
+                <!-- Register -->
+                <p>Not a member?
+                    <a href="#SignUp">Register</a>
+                </p>
+
+                <!-- Social login -->
+                <p>or sign in with:</p>
+
+                <a type="button" class="light-blue-text mx-2">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a type="button" class="light-blue-text mx-2">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a type="button" class="light-blue-text mx-2">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a type="button" class="light-blue-text mx-2">
+                    <i class="fab fa-github"></i>
+                </a>
+
+            </div>
+        </div>
+
+        <div id="SignUp">
+            <!-- Default form register -->
+            <form class="text-center border border-light p-5" method="POST">
+
+                <p class="h4 mb-4">Sign up</p>
+
+                <div class="form-row mb-4">
+                    <div class="col">
+                        <!-- First name -->
+                        <input type="text" id="fnome" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                        <!-- Last name -->
+                        <input type="text" id="lnome" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+
+                <!-- CPF -->
+                <input type="CPF" id="CPF" class="form-control mb-4" placeholder="CPF" required>
+
+                <!-- E-mail -->
+                <input type="email" id="email" class="form-control mb-4" placeholder="E-mail">
+
+                <!-- Password -->
+                <input type="password" id="pwd" class="form-control" placeholder="Password"
+                    aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                    At least 8 characters and 1 digit
+                </small>
+
+                <!-- Phone number -->
+                <input type="text" id="celular" class="form-control" placeholder="Phone number"
+                    aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                    Optional - for two step authentication
+                </small>
+
+
+                <!-- Sign up button -->
+                <button class="btn btn-info my-4 btn-block" id="Salvar">Sign Up</button>
+
+                <!-- Social register -->
+                <p>or sign up with:</p>
+
+                <a type="button" class="light-blue-text mx-2">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a type="button" class="light-blue-text mx-2">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a type="button" class="light-blue-text mx-2">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a type="button" class="light-blue-text mx-2">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <hr>
+
+                <!-- Terms of service -->
+                <p>By clicking
+                    <em>Sign up</em> you agree to our
+                    <a href="" target="_blank">terms of service</a>
+
+            </form>
+            <!-- Default form register -->
+        </div>
+    </main>
+
+
+    <div ng-app="rodapeElit">
+        <footer-elit></footer-elit>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/elit.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> -
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+</body>
+
+</html>

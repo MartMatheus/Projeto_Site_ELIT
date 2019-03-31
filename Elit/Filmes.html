@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Elit Filmes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="js/components/app.js"></script>
+    <script src="js/components/footerController.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/elit.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand logo" href="index.html"><img src="IMAGENS/Elit-logo.png" alt="Logo Elit"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Como_funciona.html">Como funciona</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Filmes.html">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Eventos.html">Eventos</a>
+            </li>
+          </ul>
+        </div>
+
+        <button type="button" class="btn btn-blue btn-rounded" id="btlogin"
+          onclick="location.href='login.html'">Login</button>
+
+      </div>
+    </nav>
+  </header>
+
+  <main id="Filmes">
+    <div class="cartoes">
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/Avengers_Infinity_War.jpg" alt="Avengers Infinity War">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Avengers Infinity War</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/A_Star_Is_Born.jpg" alt="A Star Is Born">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">A Star Is Born</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/real_steel.jpg" alt="Real Steel">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Real Steel</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/Logan.jpg" alt="Logan">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Logan</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/aqua.jpg" alt="Aquaman">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Aquaman</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="cartoes">
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/anjos.jpeg" alt="Alita">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Alita</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/avat.jpg" alt="Avatar">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Avatar</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/homem_aranha.jpg" alt="Homem Aranha">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Homem Aranha</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/league.jpg" alt="Liga da justiça">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Liga da justiça</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/batman.jpg" alt="Batman">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Batman</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="cartoes">
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/robin.jpg" alt="Robin">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Robin</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/star.jpg" alt="Star Wars">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Star Wars</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/vingadores.jpg" alt="Vingadores">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Vingadores</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/Bohemian_Rhapsody.jpg" alt="Bohemian Rhapsody">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Bohemian Rhapsody</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/bfg.jpg" alt="?">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">?</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="cartoes">
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/injustice.jpg" alt="Injustice">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Injustice</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/dragao.jpg" alt="Como treinar o seu dragão">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Como treinar o seu dragão</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/greenbook.jpg" alt="Green Book">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Green Book</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/wifiralph.jpg" alt="Wifi Ralph">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Wifi Ralph</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="card_movie">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="./IMAGENS/os-incriveis-2.jpg" alt="Os Incriveis 2">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <h4 class="card-title">Os Incriveis 2</h4>
+
+          <hr>
+
+          <h5>R$8,00 <a><i class="fas fa-cart-plus"></i></a></h5>
+        </div>
+
+        <div class="rounded-bottom mdb-color lighten-2 text-center">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-6 white-text"><i class="far fa-clock pr-1"></i>05/04/2019
+          </ul>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </main>
+
+  <div ng-app="rodapeElit">
+    <footer-elit></footer-elit>
+  </div>
+
+
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="js/elit.js"></script>
+  
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+</body>
+
+</html>
