@@ -93,6 +93,7 @@ footer {
     display: flex;
     padding: 20px;
     width: fit-content;
+    width: -moz-fit-content;
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -141,7 +142,8 @@ footer {
 /* Página Login */
 
 #tela_login {
-    width: fit-content;
+    width: fit-content;     
+    width: -moz-fit-content;
     display: flex !important;
     padding: 40px;
     position: relative;
