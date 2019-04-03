@@ -211,24 +211,24 @@ footer {
 
 /* Página de Como Funciona */
 
-.funcionamento{
+#funcionamento{
 
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;    
 
 }
-#func{
+.func{
     text-align: left;
     margin-top: 30px;
     margin-left: 100px;
     
 }
 @media only screen and (max-width: 375px){
-    .funcionamento{
+    #funcionamento{
         font-size: 20px;
     }
-    #func{      
+    .func{      
         margin: 15px;
                
         
