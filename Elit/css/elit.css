@@ -8,22 +8,14 @@
 
 /* Header */
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
-/* main {
-    background-color: #f5f5f5; 
-    margin: 40px 0 40px 0;
-    padding: 10px;
-    width: 90%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    box-shadow: -1px 1px 10px -1px;
-} */
 
-h3, h2 {
+h3,
+h2 {
     text-align: center;
     margin: 20px 0 20px 0;
 }
@@ -46,16 +38,22 @@ h3, h2 {
     background-color: #4285F4;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
     .navbar {
-        background-color: #A99D97;
+        background-color: #A99D97 !important;
     }
+
     #carrossel {
         margin-top: 0px !important;
         z-index: 1;
     }
+
     .navbar-toggler-icon {
         margin-right: 20px;
+    }
+
+    .btn-blue {
+        padding: 6.5px 16px;
     }
 }
 
@@ -128,11 +126,12 @@ footer {
     box-shadow: 0px 1px 10px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
     .cartoes {
         display: inline-block;
         padding: 0px;
     }
+
     .cartoes .card_movie {
         margin: 10px 5% 20px 5%;
         width: 90%;
@@ -142,7 +141,7 @@ footer {
 /* Página Login */
 
 #tela_login {
-    width: fit-content;     
+    width: fit-content;
     width: -moz-fit-content;
     display: flex !important;
     padding: 40px;
@@ -151,20 +150,23 @@ footer {
     transform: translate(-50%);
 }
 
-#SignUp, #login {
+#SignUp,
+#login {
     margin-left: 40px;
     box-shadow: -1px 1px 10px -1px;
-    ;
+
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
     #tela_login {
         width: 90%;
         display: block !important;
         padding: 20px 0px 0px 0px;
         margin-bottom: 20px;
     }
-    #SignUp, #login {
+
+    #SignUp,
+    #login {
         margin: 0 0 20px 0;
         box-shadow: -1px 1px 10px -1px;
     }
@@ -179,10 +181,10 @@ footer {
     left: 50%;
     transform: translate(-50%);
     box-shadow: -1px 1px 10px -1px;
-    ;
+
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
     #contato {
         margin: 40px 0 40px 0;
         width: 90%;
@@ -195,7 +197,9 @@ footer {
 
 /* Página Politica de Cancelamento */
 
-#Politica_Cancelamento, #Temos_de_uso, #privacidade {
+#Politica_Cancelamento,
+#Temos_de_uso,
+#privacidade {
     margin: 40px 0 40px 0;
     padding: 10px;
     width: 95%;
@@ -203,34 +207,37 @@ footer {
     left: 50%;
     transform: translate(-50%);
     box-shadow: -1px 1px 10px -1px;
-    
-     
+
+
 }
 
 
 
 /* Página de Como Funciona */
 
-#funcionamento{
+#funcionamento {
 
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 30px;    
+    margin-bottom: 30px;
 
 }
-.func{
+
+.func {
     text-align: left;
     margin-top: 30px;
     margin-left: 100px;
-    
+
 }
-@media only screen and (max-width: 375px){
-    #funcionamento{
+
+@media only screen and (max-width: 400px) {
+    #funcionamento {
         font-size: 20px;
     }
-    .func{      
+
+    .func {
         margin: 15px;
-               
-        
+
+
     }
 }

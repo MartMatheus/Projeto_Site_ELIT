@@ -2,105 +2,106 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Elit Filmes</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
-    <script src="js/components/app.js"></script>
-    <script src="js/components/footerController.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <link href="css/elit.css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Elit Filmes</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+  <script src="js/components/app.js"></script>
+  <script src="js/components/footerController.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/elit.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" >
-          <div class="container">
-            <a class="navbar-brand logo" href="index.html"><img src="IMAGENS/Elit-logo.png" alt="Logo Elit"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Como_funciona.html">Como funciona</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Filmes.html">Filmes</a>
-                </li>
-              </ul>
-            </div>
-    
-            <button type="button" class="btn btn-blue btn-rounded" id="btlogin" onclick="location.href='login.html'">Login</button>
-    
-          </div>
-        </nav>
-      </header>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand logo" href="index.html"><img src="IMAGENS/Elit-logo.png" alt="Logo Elit"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Como_funciona.html">Como funciona</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Filmes.html">Filmes</a>
+            </li>
+          </ul>
+        </div>
 
-    <main id="contato">
+        <button type="button" class="btn btn-blue btn-rounded" id="btlogin"
+          onclick="location.href='login.html'">Login</button>
 
-        <form class="text-center border border-light p-5">
+      </div>
+    </nav>
+  </header>
 
-            <p class="h4 mb-4">Contact us</p>
+  <main id="contato">
 
+    <form class="text-center border border-light p-5">
 
-            <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+      <p class="h4 mb-4">Contact us</p>
 
 
-            <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+      <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
 
 
-            <label>Subject</label>
-            <select class="browser-default custom-select mb-4">
-                <option value="" disabled>Choose option</option>
-                <option value="1" selected>Feedback</option>
-                <option value="2">Sugestão de filme</option>
-                <option value="3">Tive um Problema</option>
-                <option value="4">Outros</option>
-            </select>
+      <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
 
 
-            <div class="form-group">
-                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
-                    placeholder="Message"></textarea>
-            </div>
+      <label>Subject</label>
+      <select class="browser-default custom-select mb-4">
+        <option value="" disabled>Choose option</option>
+        <option value="1" selected>Feedback</option>
+        <option value="2">Sugestão de filme</option>
+        <option value="3">Tive um Problema</option>
+        <option value="4">Outros</option>
+      </select>
 
 
-            <div class="custom-control custom-checkbox mb-4">
-                <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-                <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
-            </div>
+      <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
+          placeholder="Message"></textarea>
+      </div>
 
 
-            <button class="btn btn-info btn-block" type="submit">Send</button>
-
-        </form>
-
-    </main>
-
-    <div ng-app="rodapeElit">
-        <footer-elit></footer-elit>
-    </div>
+      <div class="custom-control custom-checkbox mb-4">
+        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+      </div>
 
 
-    <script type="text/javascript" src="js/elit.js"></script>
+      <button class="btn btn-info btn-block" type="submit">Send</button>
 
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    </form>
 
-    <script type="text/javascript" src="js/popper.min.js"></script>
+  </main>
 
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <div ng-app="rodapeElit">
+    <footer-elit></footer-elit>
+  </div>
 
-    <script type="text/javascript" src="js/mdb.js"></script>
+
+  <script type="text/javascript" src="js/elit.js"></script>
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+  <script type="text/javascript" src="js/popper.min.js"></script>
+
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="js/mdb.js"></script>
 </body>
 
 </html>

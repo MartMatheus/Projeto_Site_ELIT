@@ -19,14 +19,14 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" >
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand logo" href="index.html"><img src="IMAGENS/Elit-logo.png" alt="Logo Elit"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a class="navbar-brand logo" href="index.html"><img src="IMAGENS/Elit-logo.png" alt="Logo Elit"></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
@@ -110,19 +110,19 @@
 
                 <p class="h4 mb-4">Sign up</p>
 
-                <input type="text" id="fnome" class="form-control" placeholder="First name">
+                <input type="text" id="fnome" class="form-control mb-4" placeholder="First name" required>
 
-                <input type="text" id="lnome" class="form-control" placeholder="Last name">
+                <input type="text" id="lnome" class="form-control mb-4" placeholder="Last name" required>
 
 
                 <input type="CPF" id="CPF" class="form-control mb-4" placeholder="CPF" required>
 
 
-                <input type="email" id="email" class="form-control mb-4" placeholder="E-mail">
+                <input type="email" id="email" class="form-control mb-4" placeholder="E-mail" required>
 
 
                 <input type="password" id="pwd" class="form-control" placeholder="Password"
-                    aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                    aria-describedby="defaultRegisterFormPasswordHelpBlock" required>
                 <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
                     At least 8 characters and 1 digit
                 </small>

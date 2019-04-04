@@ -19,12 +19,15 @@ function mudabtlogin() {
 
 mudabtlogin();
 
-document.getElementById("buscar").addEventListener("click", function () {
+$(document).ready(function () {
+    var usuario_logado = localStorage.getItem("logado");
 
-    var classes = document.getElementsByClassName("card-title");
-    var filmes = [];
-    for (let i = 0; i < classes.length; i++) {
-        filmes[i] = classes[i].innerText;
+    var url = '/C:/Users/Matheus/Estudos/1%20-%20INFNET/3%20-%20Desenvolvimento%20Front-end/01%20-%20Projeto%20de%20Desenvolvimento%20Front-End/Workspace_Bloco_FrontEnd/Projeto_Site_ELIT/Elit/Compra.html';
+
+    if (window.location.pathname == url) {
+        if (usuario_logado != "true") {
+            window.location.pathname = '/C:/Users/Matheus/Estudos/1%20-%20INFNET/3%20-%20Desenvolvimento%20Front-end/01%20-%20Projeto%20de%20Desenvolvimento%20Front-End/Workspace_Bloco_FrontEnd/Projeto_Site_ELIT/Elit/login.html';
+            alert("Para visualizar um filme, você precisa estar logado.")
+        }
     }
-
 });
