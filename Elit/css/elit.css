@@ -8,14 +8,11 @@
 
 /* Header */
 
-html,
-body {
+html, #compra, #indexm, body {
     height: 100%;
 }
 
-
-h3,
-h2 {
+h3, h2 {
     text-align: center;
     margin: 20px 0 20px 0;
 }
@@ -42,16 +39,13 @@ h2 {
     .navbar {
         background-color: #A99D97 !important;
     }
-
     #carrossel {
         margin-top: 0px !important;
         z-index: 1;
     }
-
     .navbar-toggler-icon {
         margin-right: 20px;
     }
-
     .btn-blue {
         padding: 6.5px 16px;
     }
@@ -66,15 +60,16 @@ h2 {
     background-color: #a89d97 !important;
 }
 
-footer {
-    margin: 40px 0 0 0;
+.ng-scope {
+    margin: 80px 0 0 0;
+    clear: both;
 }
 
-#footlogo {
+footer-elit #footlogo {
     display: flex;
 }
 
-#footlogo h6 {
+footer-elit #footlogo h6 {
     text-align: center;
     margin-left: 10px;
 }
@@ -85,27 +80,24 @@ footer {
     z-index: -1 !important;
 }
 
-/* Cards index*/
+/*index*/
 
 .cartoes {
-    display: flex;
-    padding: 20px;
     width: fit-content;
     width: -moz-fit-content;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+    margin: 20px 0px;
 }
 
 .cartoes .card_movie {
-    width: 250px;
-    margin-left: 40px;
+    width: 300px;
+    margin: 15px;
     box-shadow: 0px 1px 10px;
     border-radius: 3px 3px 5px 5px;
+    float: left;
 }
 
 .cartoes .card-title {
-    height: 56px !important;
+    height: 50px !important;
     text-align: center;
     vertical-align: middle !important;
     margin: 0;
@@ -113,7 +105,7 @@ footer {
 
 .cartoes .card-img-top {
     width: 100%;
-    height: 105px;
+    height: 140px;
     box-align: center;
 }
 
@@ -131,12 +123,24 @@ footer {
         display: inline-block;
         padding: 0px;
     }
-
     .cartoes .card_movie {
         margin: 10px 5% 20px 5%;
         width: 90%;
     }
 }
+
+/* Página Filmes */
+
+#buscar{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    width: initial;
+    clear: both;
+}
+
 
 /* Página Login */
 
@@ -150,11 +154,9 @@ footer {
     transform: translate(-50%);
 }
 
-#SignUp,
-#login {
+#SignUp, #login {
     margin-left: 40px;
     box-shadow: -1px 1px 10px -1px;
-
 }
 
 @media only screen and (max-width: 400px) {
@@ -164,9 +166,7 @@ footer {
         padding: 20px 0px 0px 0px;
         margin-bottom: 20px;
     }
-
-    #SignUp,
-    #login {
+    #SignUp, #login {
         margin: 0 0 20px 0;
         box-shadow: -1px 1px 10px -1px;
     }
@@ -181,7 +181,6 @@ footer {
     left: 50%;
     transform: translate(-50%);
     box-shadow: -1px 1px 10px -1px;
-
 }
 
 @media only screen and (max-width: 400px) {
@@ -197,9 +196,7 @@ footer {
 
 /* Página Politica de Cancelamento */
 
-#Politica_Cancelamento,
-#Temos_de_uso,
-#privacidade {
+#Politica_Cancelamento, #Temos_de_uso, #privacidade {
     margin: 40px 0 40px 0;
     padding: 10px;
     width: 95%;
@@ -207,37 +204,84 @@ footer {
     left: 50%;
     transform: translate(-50%);
     box-shadow: -1px 1px 10px -1px;
-
-
 }
-
-
 
 /* Página de Como Funciona */
 
 #funcionamento {
-
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
-
 }
 
 .func {
     text-align: left;
     margin-top: 30px;
     margin-left: 100px;
-
 }
 
 @media only screen and (max-width: 400px) {
     #funcionamento {
         font-size: 20px;
     }
-
     .func {
         margin: 15px;
+    }
+}
 
+/* Página de compras */
 
+#compra {
+    display: flex;
+    height: 100%;
+}
+
+#movieinfo .cartoes {
+    display: flex;
+    padding: 20px;
+    width: fit-content;
+    width: -moz-fit-content;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#movieinfo .cartoes .card_movie {
+    width: 550px;
+    margin-left: 40px;
+    box-shadow: 0px 1px 10px;
+    border-radius: 3px 3px 5px 5px;
+}
+
+#movieinfo .cartoes .card-title {
+    height: 56px !important;
+    text-align: center;
+    vertical-align: middle !important;
+    margin: 0;
+}
+
+#movieinfo .cartoes .card-img-top {
+    width: 100%;
+    height: 105px;
+    box-align: center;
+}
+
+#movieinfo .cartoes .card_movie ul {
+    margin-bottom: 0;
+}
+
+#movieinfo .cartoes .card_body h5 i {
+    border: black solid 5px;
+    box-shadow: 0px 1px 10px;
+}
+
+@media only screen and (max-width: 400px) {
+    #movieinfo .cartoes {
+        display: inline-block;
+        padding: 0px;
+    }
+    #movieinfo .cartoes .card_movie {
+        margin: 10px 5% 20px 5%;
+        width: 90%;
     }
 }
