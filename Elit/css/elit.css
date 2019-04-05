@@ -83,7 +83,7 @@ footer-elit #footlogo h6 {
 /*index*/
 
 .cartoes {
-    height: -webkit-fill-available;
+    margin-left: 7%;
     margin: 20px auto;
 }
 
@@ -96,7 +96,7 @@ footer-elit #footlogo h6 {
 }
 
 .cartoes .card-title {
-    height: 50px !important;
+    height: 50px;
     text-align: center;
     vertical-align: middle !important;
     margin: 0;
@@ -113,20 +113,38 @@ footer-elit #footlogo h6 {
 }
 
 @media only screen and (max-width: 400px) {
-    .cartoes {
-        display: inline-block;
+    #Filmes .cartoes {
+        display: block;
         padding: 0px;
+        margin-top: 20px;
+        -ms-transform: translate(0, 40%);
+        transform: translate(0, 40%);
     }
-    .cartoes .card_movie {
+    #Filmes .cartoes .card_movie {
         margin: 10px 5% 20px 5%;
         width: 90%;
+    }
+    #buscar {
+        margin: 0;
+        position: absolute;
+        width: -moz-fit-content;
+        width: fit-content !important;
+        padding: 0 20px;
+        clear: both;
     }
 }
 
 /* Página Filmes */
 
+
+#Filmes {
+    height: -webkit-fill-available;
+    margin-top: 105px;
+    margin-left: 7%;
+}
+
 #buscar {
-    margin: 0;
+    margin: 20px auto;
     position: absolute;
     left: 50%;
     -ms-transform: translate(-50%);
@@ -226,11 +244,10 @@ footer-elit #footlogo h6 {
 
 #compra {
     display: flex;
-    height: 100%;
 }
 
 #pagamento {
-    margin: 20px;
+    margin: auto;
     height: min-content;
     clear: both;
     box-shadow: 0px 1px 10px;
@@ -254,13 +271,10 @@ footer-elit #footlogo h6 {
 }
 
 #movieinfo .cartoes {
+    margin: auto;
     display: flex;
-    padding: 20px;
     width: fit-content;
     width: -moz-fit-content;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
 }
 
 #movieinfo .cartoes .card_movie {
@@ -272,7 +286,7 @@ footer-elit #footlogo h6 {
 }
 
 #movieinfo .cartoes .card-title {
-    height: 56px !important;
+    height: 56px;
     text-align: center;
     vertical-align: middle !important;
     margin: 0;
@@ -295,13 +309,27 @@ ul {
     box-shadow: 0px 1px 10px;
 }
 
+#compra li {
+    font-size: large;
+}
+
 @media only screen and (max-width: 400px) {
     #movieinfo .cartoes {
-        display: inline-block;
+        display: block;
         padding: 0px;
     }
     #movieinfo .cartoes .card_movie {
         margin: 10px 5% 20px 5%;
         width: 90%;
+    }
+    #compra {
+        display: block !important;
+        height: fit-content;
+    }
+    #compras .card-title {
+        height: auto !important;
+    }
+    #pagamento {
+        width: 90% !important;
     }
 }
