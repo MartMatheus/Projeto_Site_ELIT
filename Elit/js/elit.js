@@ -1,3 +1,16 @@
+$(document).ready(function () {
+    var usuario_logado = localStorage.getItem("logado");
+
+    var url = window.location.pathname.substr(-11);
+
+    if (url == "compra.html") {
+        if (usuario_logado != "true") {
+            window.location = 'login.html';
+            /* alert("Para visualizar um filme, você precisa estar logado."); */
+        }
+    }
+});
+
 function mudabtlogin() {
     var usuario_logado = localStorage.getItem("logado");
 
@@ -18,16 +31,3 @@ function mudabtlogin() {
 }
 
 mudabtlogin();
-
-$(document).ready(function () {
-    var usuario_logado = localStorage.getItem("logado");
-
-    var url = '/C:/Users/Matheus/Estudos/1%20-%20INFNET/3%20-%20Desenvolvimento%20Front-end/01%20-%20Projeto%20de%20Desenvolvimento%20Front-End/Workspace_Bloco_FrontEnd/Projeto_Site_ELIT/Elit/Compra.html';
-
-    if (window.location.pathname == url) {
-        if (usuario_logado != "true") {
-            window.location.pathname = '/C:/Users/Matheus/Estudos/1%20-%20INFNET/3%20-%20Desenvolvimento%20Front-end/01%20-%20Projeto%20de%20Desenvolvimento%20Front-End/Workspace_Bloco_FrontEnd/Projeto_Site_ELIT/Elit/login.html';
-            alert("Para visualizar um filme, você precisa estar logado.")
-        }
-    }
-});

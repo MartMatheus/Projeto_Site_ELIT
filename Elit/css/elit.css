@@ -83,9 +83,8 @@ footer-elit #footlogo h6 {
 /*index*/
 
 .cartoes {
-    width: fit-content;
-    width: -moz-fit-content;
-    margin: 20px 0px;
+    height: -webkit-fill-available;
+    margin: 20px auto;
 }
 
 .cartoes .card_movie {
@@ -113,11 +112,6 @@ footer-elit #footlogo h6 {
     margin-bottom: 0;
 }
 
-.cartoes .card_body h5 i {
-    border: black solid 5px;
-    box-shadow: 0px 1px 10px;
-}
-
 @media only screen and (max-width: 400px) {
     .cartoes {
         display: inline-block;
@@ -131,7 +125,7 @@ footer-elit #footlogo h6 {
 
 /* Página Filmes */
 
-#buscar{
+#buscar {
     margin: 0;
     position: absolute;
     left: 50%;
@@ -140,7 +134,6 @@ footer-elit #footlogo h6 {
     width: initial;
     clear: both;
 }
-
 
 /* Página Login */
 
@@ -236,6 +229,30 @@ footer-elit #footlogo h6 {
     height: 100%;
 }
 
+#pagamento {
+    margin: 20px;
+    height: min-content;
+    clear: both;
+    box-shadow: 0px 1px 10px;
+    border-radius: 3px 3px 5px 5px;
+    font-size: 1.5em;
+}
+
+#pagamento h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+#pagamento article {
+    padding: 20px;
+}
+
+#pagamento span {
+    font-weight: 450;
+}
+
 #movieinfo .cartoes {
     display: flex;
     padding: 20px;
@@ -247,6 +264,7 @@ footer-elit #footlogo h6 {
 }
 
 #movieinfo .cartoes .card_movie {
+    height: min-content;
     width: 550px;
     margin-left: 40px;
     box-shadow: 0px 1px 10px;
@@ -258,15 +276,17 @@ footer-elit #footlogo h6 {
     text-align: center;
     vertical-align: middle !important;
     margin: 0;
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 
 #movieinfo .cartoes .card-img-top {
     width: 100%;
-    height: 105px;
+    height: 100%;
     box-align: center;
 }
 
-#movieinfo .cartoes .card_movie ul {
+ul {
     margin-bottom: 0;
 }
 

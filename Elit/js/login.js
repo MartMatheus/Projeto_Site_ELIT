@@ -60,31 +60,32 @@ $(document).ready(function () {
 
     });
 
-    document.getElementById("logar").addEventListener("click", function (event) {
+});
 
-        event.preventDefault();
+document.getElementById("logar").addEventListener("click", function (event) {
 
-        var lemail = $.trim($("#lemail").val());
-        var lpwd = $.trim($("#lpwd").val());
+    event.preventDefault();
 
-        var pessoa = new Object();
+    var lemail = $.trim($("#lemail").val());
+    var lpwd = $.trim($("#lpwd").val());
 
-        pessoa = JSON.parse(localStorage.getItem(lemail));
+    var pessoa = new Object();
 
-        if (pessoa == null) {
-            alert("Email incorreto");
-            return false;
-        }
+    pessoa = JSON.parse(localStorage.getItem(lemail));
 
-        var cpwd = pessoa.pwd;
+    if (pessoa == null) {
+        alert("Email incorreto");
+        return false;
+    }
 
-        if (lpwd !== cpwd) {
-            alert("A senha está incorreta");
-            return false;
-        }
+    var cpwd = pessoa.pwd;
 
-        localStorage.setItem("logado", "true");
-        mudabtlogin();
-        location.href = "./Filmes.html";
-    });
+    if (lpwd !== cpwd) {
+        alert("A senha está incorreta");
+        return false;
+    }
+
+    localStorage.setItem("logado", "true");
+    mudabtlogin();
+    location.href = "./Filmes.html";
 });
